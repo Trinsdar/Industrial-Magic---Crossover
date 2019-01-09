@@ -38,15 +38,10 @@ repositories {
         name = "ic2"
         url = "http://maven.ic2.player.to/"
     }
-    maven {
-        name = "CurseForge"
-        url = "https://minecraft.curseforge.com/api/maven/"
-    }
 }
 
 dependencies {
-    compile fileTree(dir: 'lib', include: ['*.jar'])
-    deobfCompile "ic2-classic:IC2Classic 1.12:1.5.4.0 Dev"
+    compile files("lib/IC2Classic+1.12-1.5.4.0+Dev.jar")
 }
 
 processResources {
